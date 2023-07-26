@@ -1,9 +1,12 @@
+/* -- Variables -- */
 :root {
     --primario: #6834a6;
     --blanco: #FFF;
     --negro: #000000;
     --fuentePrincipal: 'Poppins', sans-serif;
 }
+
+/* -- REM = 10px y border box -- */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -11,6 +14,8 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+/* -- Globales -- */
 body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
