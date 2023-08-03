@@ -180,10 +180,34 @@ img {
     transform: scale(1.1);
 }
 
+@media (min-width: 768px) {
+    .listado__elemento--2col{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
 .listado__titulo{
     font-size: 3rem;
     color: var(--primario);
     margin: 0;
+}
+
+.listado__numero{
+    font-size: 6rem;
+    color: var(--primario);
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+}
+@media (min-width: 768px) {
+    .listado__numero{
+        font-size: 4rem;
+        flex-basis: 20rem;
+        text-align: right;
+    }
 }
 
 .listado__texto{
@@ -230,5 +254,35 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem;
         align-items: center;
+    }
+}
+
+/* -- Comisiones -- */
+.comisiones__titulo{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .comisiones__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
+@media (min-width: 1024px) {
+    .comisiones__grid{
+        align-items: center;
+    }
+}
+
+.comisiones__texto{
+    text-align: center;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .comisiones__texto{
+        text-align: left;
     }
 }
